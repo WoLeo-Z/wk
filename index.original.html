@@ -1,0 +1,277 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>网页转换助手</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="css/style2.css">
+
+
+<link type="text/css" rel="stylesheet" href="css/css.css">
+
+
+
+</head>
+
+<body style="margin: 0px;background: #414141 url(images/bg.jpeg) 0 428px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+
+
+
+
+
+<div id="afp" class style="display:none; width: 100%;background: #ffebd2;text-align: center;padding:2px 0px;">
+
+<div>网站近期频繁受到攻击，已开启5秒入站检测，如发生错误请先刷新页面试试。</div>
+
+</div>
+
+
+  <div class="head-search head-search-bijia box" style="width: 100%;height: 100%;max-width:900px;margin:0px auto;">
+
+
+
+
+
+    <div style="line-height: 30px;" class="search_h">
+      <h1 style="font-size: 60px;">
+          <cite>网页转换助手</cite>
+      </h1>
+
+        <p id="seeShowId" style>本站服务均为免费
+
+
+</p>
+
+  <input type="hidden" name="isNoGo" id="isNoGo" value="0">
+
+      </div>
+			<!-- <form action="down.php" method="get" onsubmit='return checkForm()' > -->
+
+  <div class="box3" style>
+
+
+      <div class="search d1" id="searchDivId">
+
+    	 <div class style="display:none">
+				 	<a class="layui-btn layui-btn-mini mapping-edit" href="#loginmodal" id="modaltrigger">登录</a>
+				</div>
+
+					<input type="hidden" name="t" value="1620290252000">
+						<input type="hidden" name="sign" value="2e4046b8419d7b5656e4785f3338adba">
+
+            <input type="text" name="url" id="kValId" class="skey" style="font-size: 14px;color:#666" autocomplete="off" onblur="this.value==''?this.value=this.title:null" onfocus="this.value==this.title?this.value='':null" title="请输入网页地址" value="请输入网页地址">
+
+      		  <button id="subbtn" type="submit" onclick="runGo()">下载</button>
+
+      		</div>
+					<p style="    margin-left: 40px;">
+						 <input type="radio" name="downType" value="doc" checked="checked">转为word
+						 <input type="radio" name="downType" value="pdf">转为pdf
+                                        
+			   
+					     </p>
+
+  			<div id="downing" style="width:94%;margin-left: 5%;font-size:25px;display:none">
+
+					<div class="barcontainer" style="width:80%">
+							<div id="bar" style="width:0%;"></div>
+					</div>
+
+					<span id="downingInfo" style="color:red;">正在导出转换中，请等待!</span>
+
+						<div class style="color: red;margin-top: 10px;margin-bottom: 5px;font-size:17px">
+
+                         部分office软件打开word文件时出现“无法打开Office open xml文件”错误，请用wps打开试试。
+
+						</div>
+
+
+						<div class style="    text-align: center;">
+								<button id class="rePlayBtn" onclick="rePlay()">重新下载</button>
+						</div>
+		</div>
+
+</div>
+
+
+
+		  <!-- </form> -->
+
+
+			<div class style="height: 200px;margin:30px">
+	
+                      网页内容转换为word、pdf导出。
+
+            
+			</div>
+
+
+
+
+
+
+
+
+
+                <div>
+                <p class="footer" style="margin-bottom: 10px;">　Copyright © 2019 - 2022 网页转换助手&nbsp; All Rights Reserved
+
+                </p>
+
+
+<!--
+<script type="text/javascript" src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+-->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+ <script type="text/javascript" src="js/s9.js"></script>
+
+<script type="text/javascript" src="js/pa.js"></script>
+<script type="text/javascript" src="js/fi7.js"></script>
+
+
+
+
+								<div style="display:none">
+
+  <script>
+
+       var isTaskList=0;
+	    var devId="";
+         var isWap=0;
+			var preQsUrl="";
+
+			var preDir="/";
+
+			var ick=1;
+
+			var hasA=0;
+        
+       		var zwglo="";
+
+		  var shot="";
+
+			var tmwflag="";
+
+      window.onload = function(){
+         
+				devId=getNewId();
+	try {
+
+
+             $('#modaltrigger').leanModal({ top: 30, overlay: 0.45, closeButton: ".hidemodal" });
+
+          setCookie2("hasVisit", "1",7);
+
+           	stfsl();
+
+         var cz = document.createElement("script");
+        cz.src = "https://s96.cnzz.com/z_stat.php?id=1276885791&web_id=1276885791";
+            document.getElementsByTagName('body')[0].appendChild(cz);
+
+	}
+	catch(err){
+     	 //	console.log(err)
+	}
+
+
+     }
+
+
+
+
+  </script>
+
+
+
+</div>
+
+              </div>
+
+
+
+  </div>
+
+
+
+	
+
+<div id="loginmodal" style="display:none;">
+
+  <div class="loginPanel normalPanel">
+          <div class="title">首次使用请输入口令后下载
+          </div>
+          <div class="waiting panelContent">
+                      <div class style="margin:10px">
+                          口令：<input type="text" name="kouling" id="kouling" class="common-text" style onblur="this.value==''?this.value=this.title:null" onfocus="this.value==this.title?this.value='':null" title="请输入口令" value="请输入口令">
+
+
+                            <button class="layui-btn layui-btn-mini mapping-edit" style="height:30px;background: #836FFF;" onclick="checkKouling()">提交</button>
+                      </div>
+
+                    <div class="wrp_code">
+
+                          </div>
+                        <div class="info">
+                              <div class="status status_browser js_status js_wx_default_tip" id="wx_default_tip">
+
+                                <p id="qrcodeLoding" style="color:red">如何获取口令：</p>
+
+                                <p style="margin: 0px;">
+                                请扫码关注这个公众号，发送“<span style="color:red">2</span>”获取。<br> &nbsp;</p>
+
+                              <a target="_blank" href="https://cdn.jsdelivr.net/gh/myhtml118/res@master/code/res/pic/qrcode7323.jpg" id="qrcodeImgA">
+                                <img src="images/qrcode7323.jpeg" width="150px">
+
+                              </a>
+
+
+
+
+                    <p id="wShowId" style="color:red;   display:none  ">手机端请将二维码图片长按保存，用微信扫一扫选择照片里的二维码识别</p>
+
+                         <p style="color:#888;font-size: 14px;display:none">此公众号仅作借权登录</p>
+            				  <p>  <button class="layui-btn layui-btn-mini mapping-edit hidemodal" href="javascript:void(0);">关闭</button></p>
+                              </div>
+
+                            </div>
+          </div>
+        </div>
+
+
+</div>
+
+
+
+	<div class="toast-wrap">
+            <span class="toast-msg"></span>
+         </div>
+
+
+
+
+ 
+
+
+
+</body>
+</html>
+
+
+
+
